@@ -1,0 +1,6 @@
+# Libraries Streamlit Cloud installs for you (nothing to install on your laptop).
+# Versions were tested together on Python 3.12.
+crewai[litellm]==1.15.23
+streamlit==1.65.0
+# Fix for old sqlite on some Linux servers (CrewAI pulls in chromadb, which needs newer sqlite).
+pysqlite3-binary==0.5.4.post2; sys_platform == "linux"
